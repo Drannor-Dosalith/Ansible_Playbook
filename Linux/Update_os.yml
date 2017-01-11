@@ -3,5 +3,5 @@
   hosts: all
 
   tasks:
-  - name: Updating CentOS
+  - name: Updating packages
   yum: name="*" state=latest update_cache=yes
