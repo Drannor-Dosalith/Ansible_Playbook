@@ -6,5 +6,5 @@
   - name: Updating cache
   yum: update_cache=yes
   
-  - name: Uprgrade all packages
+  - name: "Upgrade all packages"
   yum: name="*" state=latest
