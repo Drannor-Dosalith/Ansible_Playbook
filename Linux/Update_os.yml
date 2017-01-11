@@ -1,8 +1,8 @@
 ---
-- name: Get date from systems
+- name: Updating CentOS
   hosts: all
 
   tasks:
 
-  - name: get date
-    shell: date
+  - name: Updating
+    shell: yum update -Y
