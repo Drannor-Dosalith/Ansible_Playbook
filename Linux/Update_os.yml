@@ -4,4 +4,4 @@
 
   tasks:
 - name: Uprgrade all packages
-  yum: name='*' state=latest
+  yum: name: '*' state: latest
