@@ -3,5 +3,5 @@
   hosts: all
 
   tasks:
-- name: Upgrade all packages
+- name: Uprgrade all packages
   yum: name='*' state=latest
