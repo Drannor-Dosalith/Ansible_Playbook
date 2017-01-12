@@ -1,7 +1,4 @@
 ---
-- name: Updating CentOS
-  hosts: all
-
   tasks:
 - name: install system updates for centos systems
   yum: name=* state=latest update_cache=yes
