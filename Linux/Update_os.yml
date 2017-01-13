@@ -1,6 +1,7 @@
 ---
-  hosts: all
+- name: "Runnig system update"
+  host: all
   tasks:
- -name: "Install system updates for centos systems"
-  yum: name=* state=latest update_cache=yes
-  when: ansible_distribution == "CentOS"
+   - name: "Install system updates for centos systems"
+     yum: name=* state=latest update_cache=yes
+     when: ansible_distribution == "CentOS"
