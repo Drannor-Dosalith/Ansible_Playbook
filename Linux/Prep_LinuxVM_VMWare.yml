@@ -2,8 +2,8 @@
 - hosts: all
 #Runnig system update
   tasks:
-  - name: "Updates the OS"
+  - name: Updates the OS
   - include: Update_os.yml
 
-  - name: "Install Open-VM-Tools"
+  - name: Install Open-VM-Tools
     yum: name=Open-VM-Tools state=latest
