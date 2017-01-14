@@ -1,5 +1,5 @@
 ---
-- hosts: all
+#- hosts: all
 #Runnig system update
   tasks:
    - name: "Install system updates for centos systems"
