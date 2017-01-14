@@ -1,4 +1,4 @@
 ---
 
-- name: Check Open-VM-Tools
+- name: Test Network_Services
   yum: name=open-vm-tools state=present

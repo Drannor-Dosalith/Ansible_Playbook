@@ -5,3 +5,5 @@
   roles:
   - role: common
   - role: vm
+  - role: Atlassian
+  - role: Network_Services

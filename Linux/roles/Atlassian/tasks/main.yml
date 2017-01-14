@@ -1,4 +1,4 @@
 ---
 
-- name: Check Open-VM-Tools
+- name: Test Atlassian
   yum: name=open-vm-tools state=present
