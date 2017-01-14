@@ -1,0 +1,9 @@
+---
+
+   - name: Install system updates for centos systems
+     yum: name=* state=latest update_cache=yes
+     when: ansible_distribution == "CentOS"
+
+   - name: Install system updates for Ubuntu systems
+     apt: update_cache=yes cache_valide_time=36000
+     when: ansible_distribution == "Ubuntu"

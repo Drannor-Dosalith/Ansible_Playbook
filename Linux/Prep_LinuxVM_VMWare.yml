@@ -1,6 +1,0 @@
----
-
-- hosts: all
-
-- include: Update_os.yml
-- include: Install_Open_VM.yml

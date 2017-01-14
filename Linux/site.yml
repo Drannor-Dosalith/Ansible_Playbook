@@ -1,0 +1,7 @@
+---
+#test
+
+- hosts: all
+  roles:
+  - role: common
+  - role: vm
