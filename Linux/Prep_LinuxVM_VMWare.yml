@@ -1,7 +1,9 @@
 ---
-- hosts: all
+
 #Runnig system update
+- include: Update_os.yml
+
   tasks:
-   - include: Update_os.yml
-   - name: Install Open-VM-Tools
-     yum: name=Open-VM-Tools state=latest
+  hosts: all
+  - name: Install Open-VM-Tools
+    yum: name=Open-VM-Tools state=latest
