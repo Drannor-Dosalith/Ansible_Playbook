@@ -1,0 +1,4 @@
+---
+
+- name: Install Open-VM-Tools
+  yum: name=Open-VM-Tools state=present
