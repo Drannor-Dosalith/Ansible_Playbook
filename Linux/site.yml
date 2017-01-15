@@ -11,4 +11,4 @@
 #Make sure the Reverse_Proxy is compliant and up to date
 - hosts: Reverse Proxy
   roles:
-  - role: Reverse_Proxy
+  - role: vm
