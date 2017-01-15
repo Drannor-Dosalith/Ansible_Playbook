@@ -1,4 +1,4 @@
 ---
 
 - name: Install ngnix
-  ping:
+  yum: name=open-vm-tools state=present
