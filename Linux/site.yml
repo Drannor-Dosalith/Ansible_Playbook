@@ -7,3 +7,4 @@
   - role: vm
   - role: Atlassian
   - role: Network_Services
+  - role: Reverse_Proxy
