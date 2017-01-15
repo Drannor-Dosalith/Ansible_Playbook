@@ -1,4 +1,4 @@
 ---
 
-  -name: Install ngnix
-   ping:
+- name: Install ngnix
+  ping:
