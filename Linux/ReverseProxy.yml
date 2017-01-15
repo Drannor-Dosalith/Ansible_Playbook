@@ -1,8 +1,0 @@
----
-#Make sure the Reverse_Proxy is compliant and up to date
-
-- host: Reverse Proxy
-  roles:
-  - role: common
-  - role: vm
-  - role: Reverse_Proxy

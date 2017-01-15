@@ -7,4 +7,8 @@
   - role: vm
   - role: Atlassian
   - role: Network_Services
+
+#Make sure the Reverse_Proxy is compliant and up to date
+- host: Reverse Proxy
+  roles:
   - role: Reverse_Proxy
