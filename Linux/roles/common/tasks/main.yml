@@ -5,5 +5,5 @@
      when: ansible_distribution == "CentOS"
 
    - name: Install system updates for Ubuntu systems
-     apt: update_cache:yes cache_valid_time:36000
+     apt: update_cache=yes cache_valid_time=36000
      when: ansible_distribution == "Ubuntu"
