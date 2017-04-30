@@ -2,3 +2,8 @@
 
 - name: Check Open-VM-Tools
   yum: name=open-vm-tools state=present
+  when: ansible_distribution == "CentOS"
+
+- name: Check Open-VM-Tools
+  apt: name=open-vm-tools state=present
+  when: ansible_distribution == "Ubuntu"
