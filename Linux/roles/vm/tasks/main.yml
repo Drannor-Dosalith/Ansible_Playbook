@@ -1,9 +1,9 @@
 ---
 
-- name: Check Open-VM-Tools
+- name: Check Open-VM-Tools CentOS
   yum: name=open-vm-tools state=present
   when: ansible_distribution == "CentOS"
 
-- name: Check Open-VM-Tools
+- name: Check Open-VM-Tools Ubuntu
   apt: name=open-vm-tools state=present
   when: ansible_distribution == "Ubuntu"
