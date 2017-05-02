@@ -2,3 +2,4 @@
 
 - name: Test Network_Services
   yum: name=open-vm-tools state=present
+  when: ansible_distribution == "CentOS"
