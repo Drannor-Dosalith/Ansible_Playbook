@@ -9,6 +9,6 @@
   - role: Network_Services
 
 #Make sure the Reverse_Proxy is compliant and up to date
-- hosts: Reverse Proxy
+- hosts: Reverse_Proxy
   roles:
-  - role: Reverse Proxy
+  - role: Reverse_Proxy
