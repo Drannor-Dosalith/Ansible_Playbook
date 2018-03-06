@@ -2,3 +2,4 @@
 
 - name: Install ngnix
   yum: name=open-vm-tools state=present
+  when: ansible_distribution == "CentOS"
