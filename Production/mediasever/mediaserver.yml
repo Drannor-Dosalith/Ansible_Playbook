@@ -3,7 +3,8 @@
 - name: Update media server
   hosts: mediaserver
 
-  - task:
+  task:
+  - name: Update plexmediaserver for CentOS
     yum: name=plexmediaserver enablerepo=PlexRepo state=latest update_cache=yes
     when: ansible_distribution == "CentOS"
     notify: restart plexmediaserver
