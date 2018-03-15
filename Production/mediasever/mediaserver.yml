@@ -1,6 +1,16 @@
 ---
-#Playbook for linux roles
-- hosts: mediaserver
-  roles:
-   - common
-   - mediaserver
+#Playbook for mediaserver
+- name: Update media server
+  hosts: mediaserver
+
+  - task:
+    yum: name=plexmediaserver enablerepo=PlexRepo state=latest update_cache=yes
+    when: ansible_distribution == "CentOS"
+    notify: restart plexmediaserver
+
+  - name: Install system updates for Ubuntu systems
+    apt: name=plexmediaserver update_cache=yes cache_valid_time=36000
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Make sure that plex is started
+    service: name=plexmediaserver state=started
