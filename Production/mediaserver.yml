@@ -1,0 +1,6 @@
+---
+#Playbook for mediaserver
+- name: Update media server
+  hosts: all
+  roles:
+    - role: mediaserver
