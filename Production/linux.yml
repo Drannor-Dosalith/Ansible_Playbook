@@ -1,0 +1,6 @@
+---
+#Install update to linux server
+- name: Linux updates
+  hosts: all
+  roles:
+    -role: linux
