@@ -1,7 +1,7 @@
 ---
 #Install update to linux server
 - name: Linux updates
-- hosts: all
+  hosts: all
 
   tasks:
   - name: Install system updates for centos systems
