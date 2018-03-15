@@ -1,0 +1,8 @@
+---
+# file virtualmachines.yml
+# Define virtualmachines roles
+
+- hosts: virtualmachines
+  roles: 
+   - common
+   - virtualmachines

@@ -1,0 +1,7 @@
+---
+# Global playbook
+- import_playbook: virtualmachines.yml
+- import_playbook: linux.yml
+- import_playbook: atlassian.yml
+- import_playbook: webservers.yml
+- import_playbook: mediaserver.yml

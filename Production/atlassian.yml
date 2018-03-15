@@ -1,0 +1,6 @@
+---
+#Playbook for atlassian roles
+- hosts: atlassian
+  roles:
+   - common
+   - atlassian

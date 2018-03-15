@@ -1,0 +1,6 @@
+---
+#Playbook for linux roles
+- hosts: mediaserver
+  roles:
+   - common
+   - mediaserver
