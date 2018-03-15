@@ -7,11 +7,10 @@
   - name: Update plexmediaserver for CentOS
     yum: name=plexmediaserver enablerepo=PlexRepo state=latest update_cache=yes
     when: ansible_distribution == "CentOS"
-    notify: restart plexmediaserver
 
   - name: Install system updates for Ubuntu systems
     apt: name=plexmediaserver update_cache=yes cache_valid_time=36000
     when: ansible_distribution == "Ubuntu"
 
   - name: Make sure that plex is started
-    service: name=plexmediaserver state=started
+    service: name=plexmediaserver enabled=yes state=started
