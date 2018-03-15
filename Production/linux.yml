@@ -3,4 +3,4 @@
 - name: Linux updates
   hosts: all
   roles:
-    -role: linux
+    - role: linux
